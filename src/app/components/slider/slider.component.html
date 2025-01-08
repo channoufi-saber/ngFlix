@@ -1,5 +1,5 @@
 <div class="slider"  *ngIf="movie$ | async as movies ">
-    <div class="slide" *ngFor="let movie of movies.results; let movieIndex=index">
+    <div class="slide" *ngFor="let movie of movies; let movieIndex=index">
         <ng-container *ngIf="movieIndex === slideIndex">
         <div class="slide-bg">
             <img

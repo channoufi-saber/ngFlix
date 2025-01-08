@@ -19,7 +19,7 @@ export class SliderComponent implements OnInit {
   slideIndex=0
   imagesBaseUrl=imagesBaseUrl
   constructor(private movieService:MoviesService) { }
-  movie$=this.movieService.getPopularMovies();
+  movie$=this.movieService.getMoviesByType('popular');
   ngOnInit() {
     this.changeSlide()
   }
