@@ -9,7 +9,7 @@ import { TvshowsDto } from '../types/tvshow';
 export class TvshowsService {
 
   private apiUrl = 'https://api.themoviedb.org/3';
-  private apiKey = '1eec6fe95db2371dc0c142061f369b8f0';
+  private apiKey = '1eec6fe95db2371dc0c142061f369b8f';
 
   constructor(private http: HttpClient) {}
 

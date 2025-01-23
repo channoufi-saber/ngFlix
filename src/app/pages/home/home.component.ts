@@ -12,6 +12,7 @@ import { mapToMovies } from 'src/app/types/tvshow';
 export class HomeComponent implements OnInit {
 
   constructor(private moviesService:MoviesService, private tvshowService:TvshowsService) { }
+  popularMovies$=this.moviesService.getMoviesByType('popular');
   upcomingMovies$=this.moviesService.getMoviesByType('upcoming');
   topRatedMovies$=this.moviesService.getMoviesByType('top_rated');
   popularTvshows$=this.tvshowService.getTvShowsByType('popular',12).pipe(map(mapToMovies))
